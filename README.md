@@ -13,6 +13,6 @@ This is [Jingwei Gao](https://LobbyBoy-Dray.github.io)'s personal website:
   - Remove the comments regarding "about" in `src/components/Header.astro`.
   - Add file `src/pages/about.md` and `src/layouts/AboutLayout.astro`.
 - Add support for Math:
-  - Install `remark-math`, a plugin to support a math syntax in markdown.
+  - Install `remark-math@5.1.1`, a plugin to support a math syntax in markdown (⚠️ the latest version will raise an [exception](https://github.com/remarkjs/remark-math/issues/89)).
   - Install `rehype-katex`, a plugin to render math in HTML with KaTeX.
   - Modify `astro.config.ts` and `src/layouts/Layout.astro`.

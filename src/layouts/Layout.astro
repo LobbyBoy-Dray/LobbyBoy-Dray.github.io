@@ -57,12 +57,10 @@ const socialImageURL = new URL(
     <meta property="twitter:image" content={socialImageURL} />
 
     <!-- Katex -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
-      integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
-      crossorigin="anonymous"
-    />
+    <!-- Reference: https://ileumas.com/writing/2022/03/astro-math-katex/ -->
+    <!-- Symbols and Functions in KaTeX: https://utensil-site.github.io/available-in-katex/ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+    integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
