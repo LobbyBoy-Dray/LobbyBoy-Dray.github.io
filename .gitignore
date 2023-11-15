@@ -33,6 +33,3 @@ pnpm-debug.log*
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
-
-# Ignore these annoying files
-\.DS_Store
