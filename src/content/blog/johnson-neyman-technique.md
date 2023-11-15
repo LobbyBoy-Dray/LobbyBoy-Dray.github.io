@@ -1,18 +1,18 @@
 ---
 title: Johnson-Neyman Technique
 author: Jingwei Gao
-pubDatetime: 2023-03-21T15:33:05+08
+pubDatetime: 2023-03-25T15:20:35+08
 postSlug: johnson-neyman-technique
 featured: false
 draft: false
 tags:
   - regression
-description: How to update project dependencies and AstroPaper template.
+description: The Johnson-Neyman Technique is a statistical method used to determine the range of values of a moderator variable for which the relationship between two variables (e.g. DV ~ IV) is statistically significant.
 ---
 
-# Johnson-Neyman Technique
+> The Johnson-Neyman Technique is a statistical method used to determine the range of values of a moderator variable for which the relationship between two variables (e.g. DV ~ IV) is statistically significant.
 
-## Motivation
+## 1. Motivation
 
 A moderation model with a moderator M:
 
@@ -24,7 +24,7 @@ $$Y=(\beta_0+\beta_2M)+(\beta_1+\beta_3M)X$$
 
 From the equation, we know that when M changes, the relationship between X and Y (i.e. $\beta_1+\beta_3M$) changes accordingly. On the one hand, we hope to understand how the relationship between X and Y varies with changes in M, such as when the direction of the relationship begins to reverse. On the other hand, we want to know how the significance of the relationship between X and Y varies with changes in M. This is where the Johnson-Neyman technique comes into play.
 
-## Example
+## 2. Example
 
 > [Reference: Johnson Neyman in R (2 detailed examples) (tidypython.com)](https://tidypython.com/johnson-neyman-in-r-2-detailed-examples/)
 
@@ -41,7 +41,7 @@ JN will provide the following figure:
   - When wt > 5.90，the effect of hp on mpg is significantly positive.
   - When 3.69 < wt < 5.90, the effect of hp on mpg is not significant.
 
-## Software
+## 3. Software
 
 - SPSS: PROCESS
 - R: [Package interactions](https://cran.r-project.org/web/packages/interactions/index.html)
