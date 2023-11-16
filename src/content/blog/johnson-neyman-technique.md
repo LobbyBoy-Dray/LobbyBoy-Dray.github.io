@@ -1,7 +1,7 @@
 ---
 title: Johnson-Neyman Technique
 author: Jingwei Gao
-pubDatetime: 2023-03-25T15:20:35+08
+pubDatetime: 2019-03-25T15:20:35+08
 postSlug: johnson-neyman-technique
 featured: false
 draft: false
