@@ -4,7 +4,7 @@ author: Jingwei Gao
 pubDatetime: 2023-03-25T15:20:35+08
 postSlug: test
 featured: false
-draft: false
+draft: true
 tags:
   - test
 description: This is a test This is a test This is a test This is a test This is a test This is a test This is a test This is a test
