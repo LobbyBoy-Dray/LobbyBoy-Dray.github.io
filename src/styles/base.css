@@ -16,12 +16,16 @@
     --color-border: 236, 233, 233;
   }
   html[data-theme="dark"] {
-    --color-fill: 33, 39, 55;
-    --color-text-base: 234, 237, 243;
-    --color-accent: 255, 107, 1;
-    --color-card: 52, 63, 96;
-    --color-card-muted: 138, 51, 2;
-    --color-border: 171, 75, 8;
+    --color-fill: 34, 34, 34;
+    /* --color-fill: 33, 39, 55; */
+    --color-text-base: 197, 184, 161;
+    /* --color-text-base: 234, 237, 243; */
+    --color-accent: 174, 74, 74;
+    /* --color-accent: 255, 107, 1; */
+    --color-card: 53, 53, 53;
+    /* --color-card-muted: 74, 74, 74; */
+    --color-card-muted: 121, 21, 21;
+    --color-border: 74, 74, 74;
   }
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
