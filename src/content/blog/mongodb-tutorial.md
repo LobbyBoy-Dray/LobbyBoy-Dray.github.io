@@ -4,7 +4,7 @@ author: Jingwei Gao
 pubDatetime: 2017-09-09T19:48:28+08
 postSlug: mongodb-tutorial
 featured: false
-draft: false
+draft: true
 tags:
   - database
 description: A quick reference manual for MongoDB commands.

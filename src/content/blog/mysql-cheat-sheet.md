@@ -4,7 +4,7 @@ author: Jingwei Gao
 pubDatetime: 2018-02-07T21:28:11+08
 postSlug: mysql-cheat-sheet
 featured: false
-draft: false
+draft: true
 tags:
   - database
 description: A quick reference manual for MySQL commands.
