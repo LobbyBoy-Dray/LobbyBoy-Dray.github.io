@@ -40,10 +40,7 @@ JN will provide the following figure:
 
 ![jn-figure](/assets/jn-figure.png)
 
-- Green area represents a significant relationship between IV and DV.
-  - When wt < 3.69，the effect of hp on mpg is significantly negative.
-  - When wt > 5.90，the effect of hp on mpg is significantly positive.
-  - When 3.69 < wt < 5.90, the effect of hp on mpg is not significant.
+Green area represents a significant relationship between IV and DV: (1) When wt < 3.69，the effect of hp on mpg is significantly negative; (2) When wt > 5.90，the effect of hp on mpg is significantly positive; (3) When 3.69 < wt < 5.90, the effect of hp on mpg is not significant.
 
 ## 3. Software
 
