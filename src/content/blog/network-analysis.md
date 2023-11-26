@@ -22,7 +22,7 @@ description: An introduction to social network analysis, from node to group leve
 8. [Testing hypotheses](https://open-amber-5b2.notion.site/Testing-hypotheses-1cd9e4cb556046059d6462ba54f24197)
 9. [Group-level measures](https://open-amber-5b2.notion.site/Group-level-measures-6c449380be434b6893339e90d7565ff2)
 10. [Community detection (subgroups)](https://open-amber-5b2.notion.site/Community-detection-subgroups-6d74609fa3e14bc9a934fe5d5b1bc359)
-11. [Local node-level measures (e**gonet measures)**](https://open-amber-5b2.notion.site/Local-node-level-measures-egonet-measures-b6f7d8ddfa4a4c6fb72c3a6cc61829dc)
+11. [Local node-level measures (egonet measures)](https://open-amber-5b2.notion.site/Local-node-level-measures-egonet-measures-b6f7d8ddfa4a4c6fb72c3a6cc61829dc)
 12. [Structural holes](https://open-amber-5b2.notion.site/Structural-holes-1c6a0ffc3d6e40eab6a0e4dfec234301)
 13. [Centrality](https://open-amber-5b2.notion.site/Centrality-d453216e1dd742f39c6c716d14a1bf19)
 14. [Exponential random graph model (ERGM)](https://open-amber-5b2.notion.site/Exponential-random-graph-model-ERGM-7bad6067cfdf4becb832f1ccbee06f34)

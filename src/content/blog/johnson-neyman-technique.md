@@ -17,17 +17,13 @@ description: The Johnson-Neyman Technique is a statistical method used to determ
 A moderation model with a moderator M:
 
 $$
-\begin{aligned}
 Y=\beta_0+\beta_1X+\beta_2M+\beta_3XM
-\end{aligned}
 $$
 
 Reformulate:
 
 $$
-\begin{aligned}
 Y=(\beta_0+\beta_2M)+(\beta_1+\beta_3M)X
-\end{aligned}
 $$
 
 From the equation, we know that when M changes, the relationship between X and Y (i.e. $\beta_1+\beta_3M$) changes accordingly. On the one hand, we hope to understand how the relationship between X and Y varies with changes in M, such as when the direction of the relationship begins to reverse. On the other hand, we want to know how the significance of the relationship between X and Y varies with changes in M. This is where the Johnson-Neyman technique comes into play.
