@@ -7,7 +7,7 @@ export const SITE: Site = {
   title: "Crane's Blog",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
-  postPerPage: 5,
+  postPerPage: 10,
   recentPostSlot: 4,
 };
 

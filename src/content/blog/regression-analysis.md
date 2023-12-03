@@ -7,6 +7,7 @@ featured: true
 draft: false
 tags:
   - regression
+  - course-notes
 description: A comprehensive guide to regression analysis covering both continuous and discrete data, tailored for social science students involved in quantitative research.
 ---
 

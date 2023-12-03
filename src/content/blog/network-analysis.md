@@ -7,6 +7,7 @@ featured: true
 draft: false
 tags:
   - sna
+  - course-notes
 description: An introduction to social network analysis, spanning analysis techniques from individual nodes to group dynamics, incorporating descriptive and inferential methodologies.
 ---
 
