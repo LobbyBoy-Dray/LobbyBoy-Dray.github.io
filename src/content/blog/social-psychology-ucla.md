@@ -18,3 +18,5 @@ description: These notes compile insights from a series of social psychology lec
 3. [Automaticity & Priming](https://cranegao.notion.site/Automaticity-Priming-5c60c6ab332d4a2a9564e18b0abc6251?pvs=4)
 4. [Conscious Awareness & Controlled Processing](https://cranegao.notion.site/Conscious-Awareness-Controlled-Processing-f313e8f284864ba494a714a2b26af440?pvs=4)
 5. [Self](https://cranegao.notion.site/Self-5eec222cef8f4fc4a5721dd663df534b?pvs=4)
+6. [Self-Control & Self-Awareness](https://cranegao.notion.site/Self-Control-Self-Awareness-4cd87920c59e407c87027b3ca8d5cd5f?pvs=4)
+7. [Losing Self]()
