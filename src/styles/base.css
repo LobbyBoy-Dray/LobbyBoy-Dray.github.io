@@ -92,7 +92,7 @@
 
     prose-pre:!text-skin-base
     
-    prose-ol:!text-skin-base 
+    prose-ol:!text-skin-base
     prose-ul:overflow-x-clip
     prose-ul:!text-skin-base
     prose-li:marker:!text-skin-accent
@@ -110,6 +110,17 @@
     
     prose-hr:!border-skin-line;
   }
+
+  /* 段落与无序列表之间的间隔不要太大 */
+  .prose p + ul {
+    margin-top: -14.5px;
+  }
+
+  /* 内层列表与外层li之间的间隔 */
+  .prose li > ul {
+    margin-top: 0px;
+  }
+
   .prose a {
     @apply break-words hover:!text-skin-accent;
   }

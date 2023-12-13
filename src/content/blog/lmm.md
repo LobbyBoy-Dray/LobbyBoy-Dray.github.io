@@ -32,7 +32,7 @@ LMM treat some regression coefficients of the Level 1 model as fixed and others 
 
 **Compared to simple linear regression**, where we assume the data are random variables but the parameters are unknown and fixed, some parameters (at Level 1) are modeled as RV in LMM. It is important to note that in the Level 2 (or highest level) model of LMM, all regression coefficients are treated as fixed, which means we still assume some overall population mean. So we can view LMM as an extension of SLR.
 
-## 2. Model specification & estimation: a **theoretical example**
+## 2. Model specification & estimation: a theoretical example
 
 > Xie, Y., & Hannum, E. (1996). Regional Variation in Earnings Inequality in Reform-Era Urban China. *American Journal of Sociology*, *101*(4), 950–992. https://doi.org/10.1086/230785
 
