@@ -8,7 +8,7 @@ draft: false
 tags:
   - regression
 description: >
-  ...
+  One-way ANOVA; two-way ANOVA without replication; two-way ANOVA with replication; ANCOVA; MANOVA → All about ANOVA.
 ---
 
 ## Table of contents
