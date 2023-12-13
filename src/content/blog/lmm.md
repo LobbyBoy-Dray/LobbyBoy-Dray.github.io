@@ -1,5 +1,5 @@
 ---
-title: Linear Mixed Models
+title: Method | Linear Mixed Models
 author: Jingwei Gao
 pubDatetime: 2023-12-12T18:11:27+08
 postSlug: lmm
@@ -42,7 +42,7 @@ This paper examines the factors determining personal income in China, focusing o
 
 This is the **Level 1 model** of the LMM: $y_{ik}$ means the income of individual $i$ in city $k$；$x_{1ik}$ means years of education of individual $i$ in city $k$; $x_{2ik}$ means years of working; $x_{4ik}$ means the membership; $x_{5ik}$ means the gender.
 
-![Untitled](/assets/lmm-Untitled2.png)
+<img src="/assets/lmm-Untitled2.png" alt="Untitled2" width="400"/>
 
 This is the **Level 2 model** of the LMM: First, we can see that the effect of the square of years of work experience ($\beta_3$) and the interaction effect of years of education and gender ($\beta_6$) are fixed effects, while other effects are random. Second, a Level 2 explanatory variable $z_k$ is used to model all the random effects. $z_k$ refers to the economic change/growth of city $k$。In conclusion, this model comprises 2 fixed effects and 5 random effects. Specifically, it treats education, working experience, membership, and gender as random effects, while treating the square term and the interaction term as fixed effects. The model assumptions are:
 
@@ -141,7 +141,7 @@ pp_mod = lmer(Reaction ~ days_deprived + (days_deprived | Subject), data = sleep
 summary(pp_mod)
 ```
 
-![Untitled](/assets/lmm-Untitled5.png)
+<img src="/assets/lmm-Untitled5.png" alt="Untitled5" width="600"/>
 
 - **“Fixed effects” part**: “_This indicates that the estimated mean reaction time for participants at Day 0 was about 268 milliseconds, with each day of sleep deprivation adding an additional 11 milliseconds to the response time, on average._”
 - **“Random effects” part**:
@@ -170,8 +170,8 @@ mod = lmer(Y ~ cond + (1+cond | subj_id) + (1 | item_id), data)
 
 ## References
 
-- [Introduction to linear mixed models (ourcodingclub.github.io)](https://ourcodingclub.github.io/tutorials/mixed-models/#what)
-- [Chapter 9 Linear Mixed Models | Introduction to Data Science (bookdown.org)](https://bookdown.org/ronsarafian/IntrotoDS/lme.html)
-- [Chapter 5 Introducing linear mixed-effects models | Learning Statistical Models Through Simulation in R (psyteachr.github.io)](https://psyteachr.github.io/stat-models-v1/introducing-linear-mixed-effects-models.html#no-pooling)
-- [lme4 nlme - I am confused with ranef function in R - Cross Validated (stackexchange.com)](https://stats.stackexchange.com/questions/111702/i-am-confused-with-ranef-function-in-r)
-- [Mixed-effects modeling with crossed random effects for subjects and items (uni-tuebingen.de)](http://www.sfs.uni-tuebingen.de/~hbaayen/publications/baayenDavidsonBates.pdf)
+- <a href="https://ourcodingclub.github.io/tutorials/mixed-models/#what" target="_blank">Introduction to linear mixed models (ourcodingclub)</a>
+- <a href="https://bookdown.org/ronsarafian/IntrotoDS/lme.html" target="_blank">Chapter 9 | Introduction to Data Science (bookdown.org)</a>
+- <a href="https://psyteachr.github.io/stat-models-v1/introducing-linear-mixed-effects-models.html#no-pooling" target="_blank">Learning Statistical Models Through Simulation in R (psyteachr)</a>
+- <a href="https://stats.stackexchange.com/questions/111702/i-am-confused-with-ranef-function-in-r" target="_blank">StackExchange | I am confused with ranef function in R</a>
+- <a href="http://www.sfs.uni-tuebingen.de/~hbaayen/publications/baayenDavidsonBates.pdf" target="_blank">Mixed-effects modeling with crossed random effects for subjects and items</a>

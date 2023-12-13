@@ -1,6 +1,6 @@
 ---
 title: >
-  [Python] POST Request Body: Content Type
+  Python | POST Request Body: Content Type
 author: Jingwei Gao
 pubDatetime: 2021-04-25T08:21:53+08
 postSlug: python-post-request-body

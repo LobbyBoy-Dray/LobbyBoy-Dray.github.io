@@ -1,5 +1,6 @@
 ---
-title: Notes in Social Psychology
+title: >
+  Note | Notes in Social Psychology
 author: Jingwei Gao
 pubDatetime: 2023-03-21T15:42:21+08
 postSlug: social-psychology-ucla

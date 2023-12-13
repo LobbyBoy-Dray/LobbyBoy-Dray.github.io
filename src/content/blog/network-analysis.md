@@ -1,5 +1,5 @@
 ---
-title: Network Analysis
+title: Method | Network Analysis
 author: Jingwei Gao
 pubDatetime: 2023-04-16T15:42:21+08
 postSlug: network-analysis

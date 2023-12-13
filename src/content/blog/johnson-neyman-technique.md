@@ -1,5 +1,6 @@
 ---
-title: Johnson-Neyman Technique
+title: >
+  Method | Johnson-Neyman Technique
 author: Jingwei Gao
 pubDatetime: 2019-03-25T15:20:35+08
 postSlug: johnson-neyman-technique

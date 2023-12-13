@@ -1,5 +1,5 @@
 ---
-title: Regression Analysis
+title: Method | Regression Analysis
 author: Jingwei Gao
 pubDatetime: 2023-05-01T07:30:11+08
 postSlug: regression-analysis
