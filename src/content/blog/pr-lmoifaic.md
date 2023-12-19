@@ -14,6 +14,8 @@ description: >
 
 > Markowitz, D. M., Hancock, J. T., & Bailenson, J. N. (2023). Linguistic Markers of Inherently False AI Communication and Intentionally False Human Communication: Evidence From Hotel Reviews. _Journal of Language and Social Psychology_. https://doi.org/10.1177/0261927x231200201
 
+## Table of contents
+
 ## Problem statement
 
 - Diff in **linguistic signals** between **AI-generated** content and **human-generated** content

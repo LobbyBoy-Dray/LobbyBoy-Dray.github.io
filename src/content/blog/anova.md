@@ -11,6 +11,14 @@ description: >
   One-way ANOVA; two-way ANOVA without replication; two-way ANOVA with replication; ANCOVA; MANOVA → All about ANOVA.
 ---
 
+|             Type              | Regression Formula |   Y    |    X     |     M      |
+| :---------------------------: | :----------------: | :----: | :------: | :--------: |
+|         One-way ANOVA         |       Y ~ X        | scalar | discrete |     /      |
+| Two-way ANOVA (× replication) |     Y ~ X + M      | scalar | discrete |  discrete  |
+| Two-way ANOVA (√ replication) | Y ~ X + M + X \* M | scalar | discrete |  discrete  |
+|            ANCOVA             | Y ~ X + M + X \* M | scalar | discrete | continuous |
+|            MANOVA             |       Y ~ X        | vector | discrete |     /      |
+
 ## Table of contents
 
 ## 1. One-way ANOVA
