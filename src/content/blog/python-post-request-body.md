@@ -7,7 +7,9 @@ postSlug: python-post-request-body
 featured: false
 draft: false
 tags:
+  - python
   - programming
+  - web
 description: >
   How to specify a format (json/url-encoded string) for POST request body in Python?
 ---
