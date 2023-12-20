@@ -4,7 +4,7 @@ author: Jingwei Gao
 pubDatetime: 2017-12-22T09:53:25+08
 postSlug: spss-tutorial
 featured: false
-draft: false
+draft: true
 tags:
   - spss
 description: Class notes for the undergraduate course "Analytical Techniques of Data" & SPSS quick reference manual.
