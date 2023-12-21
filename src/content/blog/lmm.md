@@ -25,7 +25,7 @@ Sometimes, we collect **data with multilevel structures**. For example, students
 
 One major issue that multilevel data presents in regression analysis is that **observations might not be truly independent.** More specifically, observations within each level of Level 2 aren’t independent. As can be seen from the figure below, individuals from the same county are more similar than those from different counties.
 
-![Untitled](/assets/lmm-Untitled.png)
+<img src="/assets/lmm-Untitled.png" width="550">
 
 There are some approaches to deal with multilevel data other than using a LMM:
 
@@ -45,7 +45,7 @@ LMM treat some regression coefficients of the Level 1 model as fixed and others 
 
 This paper examines the factors determining personal income in China, focusing on elements such as education, work experience, Communist Party membership, and gender. Importantly, the article establishes a model of **regional heterogeneity**: it discusses the impact of urban economic growth on individual income, highlighting the heterogeneity among different cities.
 
-![Untitled](/assets/lmm-Untitled1.png)
+<img src="/assets/lmm-Untitled1.png">
 
 This is the **Level 1 model** of the LMM: $y_{ik}$ means the income of individual $i$ in city $k$；$x_{1ik}$ means years of education of individual $i$ in city $k$; $x_{2ik}$ means years of working; $x_{4ik}$ means the membership; $x_{5ik}$ means the gender.
 
@@ -61,7 +61,7 @@ $$
 
 The common estimation method for LMM is **MLE (Maximum Likelihood Estimation)**. In addition to this, there are also IGLS (Iterative Generalized Least Squares) and Bayesian methods. Since there are many available software packages for these methods, they are not described in detail here. Below are the model estimation results from the article:
 
-![Untitled](/assets/lmm-Untitled3.png)
+<img src="/assets/lmm-Untitled3.png">
 
 Some interpretations (only focus on the column of TOTAL EARNINGS):
 
@@ -74,7 +74,7 @@ Some interpretations (only focus on the column of TOTAL EARNINGS):
 
 Additionally, the article quantitatively explains why it is important to consider a regional heterogeneity model. First, it establishes a **random coefficient model**—where no explanatory variables are introduced in the Level 2 model, meaning that all random effects have only a random component without any systematic component. The fitting results are shown in the figure below:
 
-![Untitled](/assets/lmm-Untitled4.png)
+<img src="/assets/lmm-Untitled4.png">
 
 It is evident that the variance of all random effects is significantly non-zero, as the confidence intervals do not include zero. This suggests that the assumption of the existence of random effects is reasonable. Therefore, it may be necessary to identify some city-level factors to further explain these random effects, rather than solely using a random component. Consequently, the explanatory variable $z$ at Level 2 is introduced.
 
@@ -164,7 +164,7 @@ In this context, there appear to be two distinct Level 2 groupings. First, data 
 
 For [example](https://psyteachr.github.io/stat-models-v1/linear-mixed-effects-models-with-crossed-random-factors.html#simulating-data-with-crossed-random-factors), there is an experiment involving lexical decisions to a set of words (e.g., is "PINT" a word or nonword?), and the dependent variable is response time, and the independent variable is word type (noun vs verb). The model / data generating process:
 
-![Untitled](/assets/lmm-Untitled6.png)
+<img src="/assets/lmm-Untitled6.png">
 
 - random intercept: variations from both items and subjects - they are independent
 - random slope: only variation from subjects
