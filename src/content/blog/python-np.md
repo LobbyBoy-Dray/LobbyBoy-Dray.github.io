@@ -12,7 +12,8 @@ description: >
   Numpy is a powerful open-source Python package for scientific computing. It is also the foundation of other popular Python packages, such as Pandas and Scipy.
 ---
 
-> [官方API](https://docs.scipy.org/doc/numpy/reference/index.html)
+> - [官方API](https://docs.scipy.org/doc/numpy/reference/index.html)
+> - [本文notebook代码](https://github.com/LobbyBoy-Dray/PyShare/blob/master/Archived/Lecture5/Numpy/numpy_sheet.ipynb)
 
 NumPy是一个开源的Python科学计算基础库：
 
