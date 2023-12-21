@@ -219,7 +219,7 @@ ANOVA only has one DV, whereas in MANOVA, there are multiple dependent variables
 
 ![manova](/assets/manova.png)
 
-ANOVA:
+ANOVA (individual _j_ in group _i_):
 
 $$
 Y_{ij} \sim N(a_i, \sigma^2)
