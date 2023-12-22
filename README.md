@@ -11,11 +11,13 @@ This is [Jingwei Gao](https://LobbyBoy-Dray.github.io)'s personal website:
 
 ## 🆕 New Features
 
-- Add Support for Math:
+- Add support for math:
   - Install `remark-math@5.1.1`, a plugin to support a math syntax in markdown
     - ⚠️ the latest version will raise an [exception](https://github.com/remarkjs/remark-math/issues/89).
   - Install `rehype-katex`, a plugin to render math in HTML with KaTeX.
   - Modify `astro.config.ts` and `src/layouts/Layout.astro`.
+- [2023.12.22] Add support for nested posts: [demo](https://lobbyboy-dray.github.io/posts/python-pd/)
+  - A new item called "hidden" was added to the front matter and set as "true" for inner posts. Hence, these inner posts will not be visible directly and can only be accessed through the link in outer posts.
 
 ## 🐛 Fixed Bugs
 
