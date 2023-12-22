@@ -2,7 +2,7 @@ import type { CollectionEntry } from "astro:content";
 
 const getSortedPosts = (posts: CollectionEntry<"blog">[]) =>
   posts
-    .filter(({ data }) => !data.draft)
+    .filter(({ data }) => !data.draft && !data.hidden)
     .sort(
       (a, b) =>
         Math.floor(new Date(b.data.pubDatetime).getTime() / 1000) -

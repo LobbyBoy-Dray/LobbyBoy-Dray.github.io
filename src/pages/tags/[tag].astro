@@ -31,7 +31,7 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.props;
 
-const posts = await getCollection("blog", ({ data }) => !data.draft);
+const posts = await getCollection("blog", ({ data }) => !data.draft && !data.hidden);  // 其实不用改，因为后面的getSortedPosts函数也过滤了一次
 
 const tagPosts = getPostsByTag(posts, tag);
 
