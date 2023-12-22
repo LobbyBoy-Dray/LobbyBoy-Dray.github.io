@@ -205,3 +205,8 @@ When a **class** is called:
 搞懂这个例子就行了：特别注意在执行`C(1)`时调用构造函数后，其中的`self.f`指向哪个方法。
 
 <div align="middle"><img src="/assets/py2-5_4.png"></div>
+
+## Reference
+
+- [CS 61A: Structure and Interpretation of Computer Programs](https://inst.eecs.berkeley.edu/~cs61a/fa21/)
+- [Online tutorial: Composing Programs](https://www.composingprograms.com/)
