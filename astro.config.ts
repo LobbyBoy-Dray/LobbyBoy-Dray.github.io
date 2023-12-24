@@ -20,12 +20,12 @@ export default defineConfig({
     remarkPlugins: [
       "remark-math",
       "remark-toc",
-      [
-        "remark-collapse",
-        {
-          test: "Table of contents",
-        },
-      ],
+      // [
+      //   "remark-collapse",
+      //   {
+      //     test: "Table of contents",
+      //   },
+      // ],
     ],
     rehypePlugins: [
       [
