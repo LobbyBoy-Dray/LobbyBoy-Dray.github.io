@@ -13,6 +13,8 @@ description: The Johnson-Neyman Technique is a statistical method used to determ
 
 > The Johnson-Neyman Technique is a statistical method used to determine the range of values of a moderator variable for which the relationship between two variables (e.g. DV ~ IV) is statistically significant.
 
+## Table of contents
+
 ## 1. Motivation
 
 A moderation model with a moderator M:

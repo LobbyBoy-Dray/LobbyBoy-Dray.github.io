@@ -14,6 +14,8 @@ description: >
 
 > Pan, W., & Peña, J. (2021). A replication and expansion of the exposure effects of online model photos and social comparison goals on planned behaviors and self-efficacy to lose weight. New Media & Society, 146144482110553. https://doi.org/10.1177/14614448211055367
 
+## Table of contents
+
 ## Problem statement
 
 This study focuses on the exposure effects of {models with **<font color="red">higher or lower weight</font>** which vary in **<font color="orange">physical attractiveness</font>**} and {presence of **<font color="purple">social comparison instructions</font>**} on **<font color="green">men and women</font>**’s **planned behaviors** to lose weight (i.e. intentions and attitudes) and **self-efficacy** to lose weight (i.e. beliefs about one’s capacity and control over losing weight).

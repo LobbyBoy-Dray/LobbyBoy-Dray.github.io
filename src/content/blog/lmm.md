@@ -10,12 +10,12 @@ tags:
 description: A Linear Mixed Model is a statistical model that is particularly useful for analyzing data that have both fixed and random effects, which are pretty common in fields like psychology.
 ---
 
-## Summary
+## Gists
 
 - Multilevel data: Level 1 model & Level 2 model
 - Fixed effect ↔ Non-random reg. coef.
 - Random effect ↔ Random reg. coef. ↔ a restricted version of constructing dummies
-  - It looks like the Bayesian approach that treats parameters as random variables and assigns them prior distributions.
+- It looks like the Bayesian approach that treats parameters as random variables and assigns them prior distributions.
 
 ## Table of contents
 
