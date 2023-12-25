@@ -18,7 +18,7 @@ This is [Jingwei Gao](https://LobbyBoy-Dray.github.io)'s personal website:
   - Modify `astro.config.ts` and `src/layouts/Layout.astro`.
 - [2023.12.22] Add support for nested posts: [demo](https://lobbyboy-dray.github.io/posts/python-pd/)
   - A new item called "hidden" was added to the front matter and set as "true" for inner posts. Hence, these inner posts will not be visible directly and can only be accessed through the link in outer posts.
-- [2023.12.25] Add a comment system power by [giscus](https://giscus.app/zh-CN)
+- [2023.12.25] Add a comment system powered by [giscus](https://giscus.app/zh-CN)
   - It is not easy to achieve perfect compatibility with the mode switch (light/dark).
 
 ## 🐛 Fixed Bugs
