@@ -1,25 +1,28 @@
+---
+const currentTheme = localStorage.getItem("theme");
+const theme = currentTheme === "dark" ? "dark_dimmed" : "light_tritanopia";
+---
+
 <section class="giscus mx-auto mt-8 max-w-3xl"></section>
 
-<script>
-        
-const giscusAttributes = {
-"src": "https://giscus.app/client.js",
-"data-repo": "LobbyBoy-Dray/LobbyBoy-Dray.github.io",
-"data-repo-id": "R_kgDOKtmM0Q",
-"data-category": "Blog Post Comments",
-"data-category-id": "DIC_kwDOKtmM0c4Cb-Oj",
-"data-mapping": "url",
-"data-strict": "0",
-"data-reactions-enabled": "1",
-"data-emit-metadata": "0",
-"data-input-position": "bottom",
-"data-theme": localStorage.getItem("theme"),
-"data-lang": "en",
-"crossorigin": "anonymous",
-"async": "",
-};
+<script src="https://giscus.app/client.js"
+        data-repo="LobbyBoy-Dray/LobbyBoy-Dray.github.io"
+        data-repo-id="R_kgDOKtmM0Q"
+        data-category="Blog Post Comments"
+        data-category-id="DIC_kwDOKtmM0c4Cb-Oj"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme={theme}
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async
+></script>
 
-const giscusScript = document.createElement("script");
+<!-- const giscusScript = document.createElement("script");
 Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
 document.body.appendChild(giscusScript);
 
@@ -27,7 +30,7 @@ document.body.appendChild(giscusScript);
 
 
 function changeGiscusTheme() {
-  const theme = document.querySelector('html[data-theme]').getAttribute('data-theme')
+  let theme = document.querySelector('html[data-theme]').getAttribute('data-theme')
   function sendMessage(message) {
     const iframe = document.querySelector('iframe.giscus-frame');
     if (!iframe) return;
@@ -50,8 +53,5 @@ for (const mutation of mutationsList) {
 }
 };
 const observer = new MutationObserver(callback);
-observer.observe(element, obsConfig);
-
-
-</script>
+observer.observe(element, obsConfig); -->
 
