@@ -1,7 +1,7 @@
 ---
 title: Method | Linear Mixed Models
 author: Jingwei Gao
-pubDatetime: 2023-12-12T18:11:27+08
+pubDatetime: 2023-12-12
 postSlug: lmm
 featured: true
 draft: false

@@ -28,7 +28,7 @@ description: >
 > [Note.pdf](/pyLec2.pdf)
 
 - **Section 1: Data Structures**
-  - 4 sequence types: list(列表), str(字符串), tuple(元组), range(规则整数序列)
+  - 4 sequence types: list(列表), str(字符串), tuple(元组), range(整数序列)
   - 1 set type: set(集合)
   - 1 mapping type: dict(字典)
 - **Section 2: Selection - `if`**
