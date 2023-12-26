@@ -3,7 +3,7 @@ title: R Programming
 author: Jingwei Gao
 pubDatetime: 2022-12-21T13:52:31+08
 postSlug: r-programming
-featured: true
+featured: false
 draft: false
 tags:
   - R
