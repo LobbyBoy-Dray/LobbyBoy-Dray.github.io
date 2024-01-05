@@ -8,7 +8,7 @@ draft: false
 tags:
   - regression
 description: >
-  ...
+  Mediation analysis + moderators
 ---
 
 > 李彤,张学敏,周杰.“伊斯特林悖论”的教育再探——教育影响主观幸福感的中介效应[J].教育与经济,2023,39(04):44-53.
@@ -62,3 +62,5 @@ Interpretation:
 
 - 家庭收入负向调节文化消费与幸福感的关系（e=-0.041，p<0.05），说明收入越高，文化消费对幸福感的正向效应越低。
 - 文化消费的中介效应（indirect effect）在低收入和高收入两个条件之下均显著：低收入条件下为0.031（p=0.000），高收入条件下为0.015（p=0.001）。
+
+Full note on this paper: [👉 click here 👈](https://cranegao.notion.site/8e760f1f11ad4e8f858180690779ec6c?pvs=4)

@@ -308,7 +308,8 @@ parameterEstimates(fitmod2, ci=TRUE, level=0.95, boot.ci.type="perc")
 
 ## 4. Paper Reproduction
 
-[TBD](): How to report the results of mediation analysis in a journal?
+- [《“伊斯特林悖论”的教育再探——教育影响主观幸福感的中介效应》](https://cranegao.notion.site/8e760f1f11ad4e8f858180690779ec6c?pvs=4)
+- [《社会公平感、再分配偏好与福利态度——基于CGSS2015数据的实证分析》](https://cranegao.notion.site/CGSS2015-0ecd1129902341458a2a62afd23de93b?pvs=4)
 
 ## Reference
 
