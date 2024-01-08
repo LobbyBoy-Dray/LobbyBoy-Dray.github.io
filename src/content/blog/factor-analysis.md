@@ -7,6 +7,7 @@ featured: false
 draft: false
 tags:
   - regression
+  - r
 description: >
   Factor analysis is a data reduction technique that groups items into factors based on inter-correlations.
 ---

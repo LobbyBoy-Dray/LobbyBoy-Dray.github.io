@@ -7,6 +7,7 @@ featured: true
 draft: false
 tags:
   - regression
+  - r
 description: A Linear Mixed Model is a statistical model that is particularly useful for analyzing data that have both fixed and random effects, which are pretty common in fields like psychology.
 ---
 

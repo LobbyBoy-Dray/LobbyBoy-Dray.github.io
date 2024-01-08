@@ -7,6 +7,7 @@ featured: true
 draft: false
 tags:
   - regression
+  - r
 description: >
   A mediation model (X → M → Y) is a causal model grounded in theoretical construction rather than defined statistically.
 ---

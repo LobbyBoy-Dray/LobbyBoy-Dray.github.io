@@ -8,6 +8,7 @@ draft: false
 tags:
   - regression
   - course-notes
+  - r
 description: >
   SEM is an umbrella term referring to a framework of linear models designed to explore relationships among both observable and unobservable variables.
 ---
