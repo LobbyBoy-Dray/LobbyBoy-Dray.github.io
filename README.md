@@ -7,7 +7,7 @@ This is [Jingwei Gao](https://LobbyBoy-Dray.github.io)'s personal website:
 
 ## 💡 To-Do List
 
-- Sidebar for TOB
+- Sidebar for TOB.
 
 ## 🆕 New Features
 
