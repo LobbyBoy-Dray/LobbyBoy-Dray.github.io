@@ -3,7 +3,7 @@ title: Method | Mediation Analysis (in R)
 author: Jingwei Gao
 pubDatetime: 2023-12-25
 postSlug: mediation-analysis
-featured: true
+featured: false
 draft: false
 tags:
   - regression

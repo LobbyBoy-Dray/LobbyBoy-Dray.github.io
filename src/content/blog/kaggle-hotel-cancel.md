@@ -2,9 +2,9 @@
 title: >
   Project | Cancel or not? Predictive Analysis for Hotel Booking Data
 author: Jingwei Gao
-pubDatetime: 2020-03-18T09:43:15+08
+pubDatetime: 2020-03-18
 postSlug: kaggle-hotel-cancel
-featured: true
+featured: false
 draft: false
 tags:
   - machine learning

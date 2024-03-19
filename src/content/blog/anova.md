@@ -1,9 +1,9 @@
 ---
 title: Method | Analysis of Variance
 author: Jingwei Gao
-pubDatetime: 2023-10-21T13:43:52+08
+pubDatetime: 2023-10-21
 postSlug: anova-family
-featured: true
+featured: false
 draft: false
 tags:
   - regression
