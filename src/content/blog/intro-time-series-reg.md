@@ -302,11 +302,28 @@ $$
 
 Hence, we could:
 
-- Run the OLS regression of $y_t$ on $\mathbf{x}_t$ and obtain the OLS residuals $\hat{u}_t$
-- Run the regression of $\hat{u}_t$ on $\hat{u}_{t-1}$ to get $\hat{\rho}$
+- Run the OLS reg of $y_t$ on $\mathbf{x}_t$ and obtain the OLS residuals $\hat{u}_t$ (size=n)
+- Run the regression of $\hat{u}_t$ on $\hat{u}_{t-1}$ to get $\hat{\rho}$ (size=n-1)
 - Data transformation: $y_t^* = y_t- \hat{\rho} y_{t-1}$, $x_{tk}^* = x_{tk}-\hat{\rho} x_{t-1,k}$
-- Run the final regression with transformed data
+- Run the final regression with transformed data (size=n-1)
+
+Remarks: This process is called the **Cochrane-Orcutt procedure**, which omits the first observation in the final estimation step. Another similar procedure, called **Prais-Winsten estimation**, includes the first observation in the last step. However, asymptotically, it makes no difference whether or not the first observation is used.
 
 #### 2) Regressors are not strictly exogenous
 
 In this case, we use OLS to get consistent estimations but use another program to compute corrected standard errors and other test statistics (i.e. serial correlation–robust standard error).
+
+**Eg: Newey-West Standard Error (with parameter g)**
+
+```r
+library(sandwich)
+
+# Covariance matrix
+Sigma <- NeweyWest(model, lag=4)
+
+# Compute NW standard error for spdlaw and beltlaw
+se_spdlaw  <- sqrt(diag(Sigma))["spdlaw"]      # 0.02547 <- 0.02057
+se_beltlaw <- sqrt(diag(Sigma))["beltlaw"]     # 0.03336 <- 0.02323
+```
+
+The parameter g controls how much serial correlation we are allowing in computing se.
