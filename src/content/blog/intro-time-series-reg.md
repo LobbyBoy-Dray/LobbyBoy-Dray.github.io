@@ -2,7 +2,7 @@
 title: >
   Method | Introduction About Time Series Regression
 author: Jingwei Gao
-pubDatetime: 2024-03-19
+pubDatetime: 2024-03-18
 postSlug: intro-time-series-reg
 featured: false
 draft: false
