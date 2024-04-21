@@ -8,6 +8,7 @@ This is [Jingwei Gao](https://LobbyBoy-Dray.github.io)'s personal website:
 ## 💡 To-Do List
 
 - Sidebar for TOB.
+- More elegant table layout.
 
 ## 🆕 New Features
 
