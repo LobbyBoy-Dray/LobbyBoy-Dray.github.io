@@ -92,11 +92,13 @@ $$
 
 **Remarks:**
 
-- First, non-contemporaneous exogeneity means $u_t$ cannot be correlated with past $\mathbf{x}$. This can be ensured by introducing the lag term of x into the model and making the assumption about contemporaneous exogeneity.
-- Second, non-contemporaneous exogeneity means $u_t$ cannot be correlated with future $\mathbf{x}$, which is tricky because in some cases, $y_t$ may likely have feedback on future x, meaning **x will react to past y**. For example, y refers to the monthly urban homicide count, and x equals the monthly police count. If the city adjusts current policing based on past crime rates, which sounds quite reasonable, then it certainly violates non-contemporaneous exogeneity.
-- contemporaneous exogeneity + non-contemporaneous exogeneity = **strict exogeneity**
-- It is easy to show that **AR(1) violates the non-contemporaneous exogeneity**.
+- **[TS3]** First, non-contemporaneous exogeneity means $u_t$ cannot be correlated with past $\mathbf{x}$. This can be ensured by introducing the lag term of x into the model and making the assumption about contemporaneous exogeneity.
+- **[TS3]** Second, non-contemporaneous exogeneity means $u_t$ cannot be correlated with future $\mathbf{x}$, which is tricky because in some cases, $y_t$ may likely have feedback on future x, meaning x will react to past y. For example, y refers to the monthly urban homicide count, and x equals the monthly police count. If the city adjusts current policing based on past crime rates, which sounds quite reasonable, then it certainly violates non-contemporaneous exogeneity.
+- **[TS3]** It is easy to show that **AR(1) violates the non-contemporaneous exogeneity**.
   - $Cov(u_t, y_t) = Var(u_t) = \sigma^2$
+- Why is there no assumption about independent sampling?
+  - It cannot be true in time-series settings.
+  - It is partially compensated by the non-contemporaneous exogeneity.
 - **TS1 + TS2 + TS3 → OLS estimators are unbiased.**
 
 ### 2.2 Additional Assumptions for BLUE
