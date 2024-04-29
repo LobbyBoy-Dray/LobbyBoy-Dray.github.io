@@ -45,7 +45,7 @@ $$
 
 Coefficient interpretations:
 
-- **Impact propensity interpretation:** Assume that z increases by 1 unit only at time t and reverts to its previous level at time t+1 (i.e. the increase in z is temporary), then it is easy to show that $y_{t} - y_{t-1} = \delta_0$, $y_{t+1} - y_{t-1} = \delta_1$, $y_{t+2} - y_{t-1} = \delta_2$… We combine all the coefficients $(\delta_0, \delta_1,\cdots, \delta_q)$ and call it the **lag distribution**.
+- **Impact propensity interpretation:** Assume that z increases by 1 unit only at time t and reverts to its previous level at time t+1 (i.e. the increase in z is temporary), then it is easy to show that $y_{t} - y_{t-1} = \delta_0$, $y_{t+1} - y_{t-1} = \delta_1$, $y_{t+2} - y_{t-1} = \delta_2$… We combine all the coefficients $(\delta_0, \delta_1,\cdots, \delta_q)$ and call it the **lag distribution(滞后分布)**.
 - **Long-run propensity interpretation:** Assume that z permanently increases by 1 unit at and after time t, then it is easy to show that $y_{t} - y_{t-1} = \delta_0$, $y_{t+1} - y_{t-1} = \delta_0 + \delta_1$, $y_{t+2} - y_{t-1} = \delta_0 + \delta_1+\delta_2$… After a sufficiently long period of time, the change in y will reach $\sum\delta$ and remain constant, which is defined as the long-run propensity(LRP). It can be regarded as the “final result” of the cumulative effect of the lag distribution.
 
 Remarks:
@@ -66,25 +66,25 @@ $$
 y_t = \beta_0 + \beta_1x_{t1} + \cdots + \beta_kx_{tk} + u_t
 $$
 
-Remarks: $x_{tj}$ can be a lag term of an independent or dependent variable, such as $z_{t-1}$ or $z_{t-2}$...
+Remarks: $x_{tj}$ can be a lag term of an independent or dependent variable, such as $y_{t-1}$ or $y_{t-2}$…
 
 **TS2: No Perfect Collinearity**
 
 In the time series process, no independent variable remains constant nor a perfect linear combination of the others.
 
-**TS3: Zero Conditional Mean**
+**TS3: Zero Conditional Mean (i.e. Strict Exogeneity)**
 
 $$
 E(u_t | \mathbf{X}) = 0,\quad t=1,...,n
 $$
 
-It implies both **contemporaneous** exogeneity:
+It implies both contemporaneous exogeneity:
 
 $$
 E(u_t|\mathbf{x}_t) = 0\ \text{for}\ \forall t
 $$
 
-and **non-contemporaneous** exogeneity:
+and non-contemporaneous exogeneity:
 
 $$
 E(u_t|\mathbf{x}_s) = 0\ \text{for}\ \forall t\ne s
@@ -117,7 +117,7 @@ $$
 
 **Remarks:**
 
-- If TS5 is violated, we say that the error term exhibits **serial correlation**, also known as **autocorrelation**, or an autocorrelated error term.
+- If TS5 is violated, we say that the error term exhibits serial correlation, also known as autocorrelation, or an autocorrelated error term.
 - **TS1 + TS2 + TS3 + TS4 + TS5 (i.e. “Gauss-Markov assumptions”) → OLS estimators are BLUE.**
   - → We can easily compute the variance of OLS estimators;
   - → We can get the unbiased estimation for σ2…
@@ -127,7 +127,8 @@ $$
 **TS6: Normality**
 
 $$
-u_t \perp \mathbf{X}\\ u_t \sim_{i.i.d.} N(0, \sigma^2)
+u_t \perp \mathbf{X}\\
+u_t \sim_{i.i.d.} N(0, \sigma^2)
 $$
 
 **Remarks:**
@@ -142,10 +143,10 @@ $$
   - Linear time trend: $y_t = \beta_0 + \beta_1t + u_t$
   - Quadratic time trend: $y_t = \beta_0 + \beta_1t + \beta_2t^2 +  u_t$
   - Exponential time trend: $log(y_t) = \beta_0 + \beta_1t + u_t$
-- Why should trend terms be added? To avoid **omitted variable bias** - especially when independent variables are also highly trending. An alternative approach is to do regression after detrending IVs and DVs.
+- Why should trend terms be added? To avoid omitted variable bias - especially when independent variables are also highly trending. An alternative approach is to do regression after detrending IVs and DVs.
 - **Seasonality**: If a time series is observed at monthly or quarterly intervals (or even weekly or daily), it may exhibit seasonality.
-- We can incorporate **seasonal dummies** into the model to capture seasonality. For example, when working with monthly data, we can add 11 dummies for February to December, with January as the baseline. Additionally, we can conduct a joint F-test to determine whether there is significant seasonality (H0: all coefficients before month dummies are 0).
-- Similarly, we can first **deseasonalize** independent and dependent variables, and then conduct regression using the deseasonalized data without incorporating seasonal dummies.
+- We can incorporate seasonal dummies into the model to capture seasonality. For example, when working with monthly data, we can add 11 dummies for February to December, with January as the baseline. Additionally, we can conduct a joint F-test to determine whether there is significant seasonality (H0: all coefficients before month dummies are 0).
+- Similarly, we can first deseasonalize independent and dependent variables, and then conduct regression using the deseasonalized data without incorporating seasonal dummies.
 
 ## 3. Modern Assumptions
 
@@ -173,9 +174,9 @@ $$
 
 Remarks:
 
-- **Why introduce stationarity and weak dependence?** To replace the assumption of **random sampling** in cross-sectional regression, ensuring LLN and CLT hold again, which are important for justifying OLS.
+- **Why introduce stationarity and weak dependence?** To replace the assumption of random sampling in cross-sectional regression, ensuring LLN and CLT hold again, which are important for justifying OLS.
 - Both **MA(1)** and **AR(1)** are both covariance stationary and weakly dependent (easy to prove).
-  - Remember, AR(1) violates non-contemporaneous exogeneity. Hence, AR(1) violates TS3 but satisfies TS3’.
+  - Remember, AR(1) violates non-contemporaneous exogeneity. Hence, AR(1) violates TS3 but satisfies TS3’, which we will talk about later.
 - **Random walk** is neither stationary nor weakly dependent.
   - In fact, all **unit root processes** are persistent (i.e. not weakly dependent), implying that current y is highly correlated with future y over a long span of time.
   - So, what should we do when dealing with highly persistent sequences, such as unit root process like random walk? **Do data transformation**. Weakly dependent processes are called **integrated of order zero**, which we do not need to do anything. However, unit root processes are called **integrated of order one** and require **first-order differencing**, resulting in the sequence becoming weakly dependent (and usually stationary as well).
@@ -185,7 +186,7 @@ Remarks:
 
 **TS1’: Linearity + Stationary & Weak Dependence**
 
-- = TS1 + two prerequisites for the process $(\mathbf{x}_t, y_t)$
+- = TS1 + two prerequisites for the process $\{(\mathbf{x}_t, y_t)\}$
 
 **TS2’: No Perfect Collinearity**
 
@@ -194,7 +195,7 @@ Remarks:
 **TS3’: Zero Conditional Mean**
 
 - Only contemporaneously exogenous: $E(u_t | \mathbf{x}_t) = 0$
-- In this case, AR(1) could satisfy TS3’.
+- In this case, AR(1) satisfies TS3’.
 
 **TS1’ + TS2’ + TS3’ → OLS estimators are consistent.**
 
@@ -209,7 +210,6 @@ Remarks:
 **TS5’: No Serial Correlation**
 
 - Only contemporaneous as condition: $Cov(u_t,u_s|\mathbf{x}_t, \mathbf{x}_s) = 0\ \text{for}\ \forall t\ne s$
-- **Dynamically Complete Model:** In a time series model, if $E(u_t | x_t, y_{t-1}, x_{t-1}, \cdots) = 0$, which is identical to $E(y_t | x_t, y_{t-1}, x_{t-1}, \cdots ) = E(y_t | x_t)$, then it means $x_t$ contains sufficient information such that the lag terms of x and y do not contribute to the explanation for $y_t$. In this case, **the model satisfies TS5’ and is called a dynamically complete model**.
 
 **TS1’ + TS2’ + TS3’ + TS4’ + TS5’ → OLS estimators are asymptotically normally distributed.**
 
@@ -222,27 +222,34 @@ Remarks:
 
 ### 4.1 Consequence
 
-Serial correlation **does not affect unbiasedness or consistency**, but it does make the standard errors of OLS estimates and other test statistics invalid, thereby rendering various statistical tests unreliable. As for R-squared, if time series data is stationary and weakly dependent, even in the presence of serial correlation, R-squared remains useful.
+In the context of classical assumptions, serial correlation does not affect **unbiasedness** as long as the model satisfies TS1 to TS3. Similarly, under modern assumptions, serial correlation does not affect **consistency** as long as the model meets assumptions TS1’ to TS3’.
 
-**Example: AR(1) model**
+However, it does make the **standard errors** of OLS estimates and other test statistics invalid, thereby rendering various statistical tests unreliable. As for **R-squared**, if time series data is stationary and weakly dependent, even in the presence of serial correlation, R-squared remains useful.
+
+A common **misconception** is that the *OLS estimator is inconsistent when lagged dependent variables are present*❌. Below are two examples to illustrate that the OLS estimator of an AR model can be consistent or inconsistent.
+
+**Example: AR(1) model with contemporaneous exogeneity**
 
 $$
 y_t = \beta_0 + \beta_1 y_{t-1} + u_t \\
-E(u_t | y_{t-1}) =0
+E(u_t | y_{t-1}) = 0
 $$
 
-- The model satisfies TS3’ (i.e. contemporaneously exogenous) by construction → OLS is consistent.
+- The 2nd equation represents contemporaneous exogeneity (i.e. TS3’).
+- This “constructed” model satisfies TS3’ → **OLS is consistent**.
 - However, without further information, we do not know whether there will be serial correlation.
 
-**Example: AR(1) model with AR(1) error terms**
+**Example: AR(1) model with AR(1) errors**
 
 $$
 y_t = \beta_0 + \beta_1 y_{t-1} + u_t \\
 u_t = \rho u_{t-1} + e_t
+
+
 $$
 
-- The model violates TS5’ because $Cov(u_t, u_{t-1}) = \rho \sigma^2 \ne 0$.
-- The model violates TS3’ because $Cov(y_{t-1} , u_t) = \rho Cov(y_{t-1}, u_{t-1}) \ne 0$.
+- $\{e_t\}$ is a white-noise sequence.
+- This “serially correlated” model violates TS3’: $Cov(y_{t-1} , u_t) = \rho Cov(y_{t-1}, u_{t-1}) \ne 0$ → **OLS is inconsistent**.
 - However, this model can be transformed into an AR(2) model with a white noise error term.
 
 ### 4.2 Testing
@@ -304,7 +311,7 @@ $$
 
 Hence, we could:
 
-- Run the OLS reg of $y_t$ on $\mathbf{x}_t$ and obtain the OLS residuals $\hat{u}_t$ (size=n)
+- Run the OLS regression of $y_t$ on $\mathbf{x}_t$ and obtain the OLS residuals $\hat{u}_t$ (size=n)
 - Run the regression of $\hat{u}_t$ on $\hat{u}_{t-1}$ to get $\hat{\rho}$ (size=n-1)
 - Data transformation: $y_t^* = y_t- \hat{\rho} y_{t-1}$, $x_{tk}^* = x_{tk}-\hat{\rho} x_{t-1,k}$
 - Run the final regression with transformed data (size=n-1)
