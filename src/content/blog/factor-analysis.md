@@ -51,6 +51,11 @@ description: >
 
 ## A simple example
 
+```r
+library(psych)
+library(REdaS)
+```
+
 We aim to identify the optimal number of factors (1 or not) that can be extracted from three items related to welfare attitudes:
 
 <img src="/assets/factor-analysis-1.png" alt="factor-analysis-1" width="300"/>
