@@ -51,7 +51,7 @@ $$
 
 Some remarks:
 
-- The prerequisite of GCT is that all time series are **stationary**.
+- ⚠️⚠️⚠️The prerequisite of GCT is that all time series are **stationary**.
 - As long as any lagged term of X is significant, X is a Granger cause of Y.
 - The choice of lag _q_ for X is not important, but there are some empirical guidelines. For instance, for annual data, 1 to 2 lagged terms may suffice; for quarterly data, 4 or 8; for monthly data, 6 or 12.
 - In practice, when testing for Granger causality between X and Y, four possible outcomes may appear: ①only X is a Granger cause of Y, ②only Y is a Granger cause of X, ③both X and Y are Granger causes of each other, or ④there is no Granger causality between X and Y.
