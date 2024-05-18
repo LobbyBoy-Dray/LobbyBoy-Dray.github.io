@@ -70,6 +70,7 @@ In summary, the power of a test is mainly associated with three factors: 1) the 
 
 ## References
 
-- [Lesson 25: Power of a Statistical Test | STAT 415 (psu.edu)](https://online.stat.psu.edu/stat415/lesson/25)
-- 陈希孺(2009)：《概率论与数理统计》，第5.1节
-- [显著性测试的功效介绍|AP统计|可汗学院 - YouTube](https://www.youtube.com/watch?v=6_Cuz0QqRWc)
+- [Lesson 25: Power of a Statistical Test | STAT 415](https://online.stat.psu.edu/stat415/lesson/25). Penn State University.
+- 陈希孺. (2009). 《概率论与数理统计》, 第5.1节.
+- [显著性测试的功效介绍 | 可汗学院](https://www.youtube.com/watch?v=6_Cuz0QqRWc).
+- Imai, K. (2017). Quantitative Social Science: An Introduction, Chapter 7.2.6, Power Analysis.
