@@ -159,14 +159,14 @@ Based on this criterion, we could conclude that the indirect effect between grad
 
 ### 3.2 Delta method: Sobel test
 
-The Delta method represents a group of tests that construct a standard normal distributed statistic based on estimating the standard error of $\hat{a}\hat{b}$. And Sobel test is by far the most commonly used one. The test statistic:
+The Delta method represents a group of tests that construct a standard normal distributed statistic based on the standard error of $\hat{a}\hat{b}$. And Sobel test is by far the most commonly used one. The test statistic:
 
 $$
 \frac{\hat{a} \cdot \hat{b}}{\sqrt{\hat{a}^2 \cdot se(\hat{b})^2 + \hat{b}^2 \cdot se(\hat{a})^2}}
 $$
 
 - All the values in the formula can be accessed through step 2 and 3.
-- The denominator is the (estimated) standard error of $\hat{a}\hat{b}$.
+- The denominator is the standard error of $\hat{a}\hat{b}$.
 - When H0 is true, the test statistic follows standard normal distribution.
 - 👍 easy to compute.
 - 👎 very conservative (i.e. low power; not easy to reject H0) because the sampling distribution of ab is higly skewed (but Sobel test assumes the sampling distribution is normal distribution).
@@ -200,7 +200,7 @@ sobel(myData$X, myData$M, myData$Y)
 
 ### 3.3 Resampling method: bootstrapping
 
-The resampling method represents a group of approaches based on sampling techniques. For example, bootstrapping, which means resampling with replacement many times, could empirically generate a sampling distribution. Then, we can compute an approximate standard error of $\hat{a}\hat{b}$ and construct a confidence interval. If 0 is not in the interval, we can conclude that the indirect effect is significant. We can use `mediation` or `lavaan` package to implement resampling methods in R.
+The resampling method represents a group of approaches based on sampling techniques. For example, bootstrapping, which means resampling with replacement many times, could empirically generate a sampling distribution. Then, we can compute an approximate standard deviation of $\hat{a}\hat{b}$ and construct a confidence interval. If 0 is not in the interval, we can conclude that the indirect effect is significant. We can use `mediation` or `lavaan` package to implement resampling methods in R.
 
 #### 3.3.1 `mediation`
 
