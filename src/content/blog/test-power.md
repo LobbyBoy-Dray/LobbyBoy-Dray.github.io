@@ -26,7 +26,7 @@ $$
 P(\text{Type II error}) \triangleq P(\text{accept}\ H_0|H_0\ \text{false}) \triangleq \beta
 $$
 
-We face a trade-off between Type I error and Type II error when constructing a test:
+We face a trade-off between Type I error and Type II error when constructing a test (the following is the sampling distribution of the sample mean):
 
 <img src="/assets/power-1.jpeg" width="600">
 
@@ -57,6 +57,8 @@ The power of a hypothesis test depends on the value of the parameter being exami
 Hence, we can draw a plot like that - it is the **power function**:
 
 <img src="/assets/power-4.jpeg" width="300">
+
+We can see that when the true parameter (i.e., alternative) is further away from the value specified by the null, indicating a larger potential **effect size**, the test has more power.
 
 Altering the significance level α will cause the curve to move either upwards or downwards:
 
