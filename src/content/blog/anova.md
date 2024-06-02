@@ -145,6 +145,8 @@ $$
 
 We can construct a CI for $a_u-a_v$ with a confidence coefficient of $1-\alpha$. If 0 is not within this CI, then it indicates that there is indeed a significant difference between $a_u$ and $a_v$.
 
+**[Warning! Inflation of type I error]** For just a single pair $a_u$ and $a_v$, the probability that the CI contains the parameter is $1-\alpha$. However, when constructing confidence intervals for multiple pairs, the probability that all intervals include their parameters decreases to $(1-\alpha)^m$. For example, if $\alpha=0.05$ and $m=10$, the probability that all 10 intervals contain their parameters is only $0.95^{10} \approx 0.60$. Therefore, for pairwise comparisons, alternative methods such as the **Tukey–Cramer Method** should be considered, instead of direct pair comparisons.
+
 ### 1.6 Connection with regression
 
 Single-factor (k levels) ANOVA is equivalent to a linear regression with one categorical variable that can take k values. Thus, it can be transformed into k-1 dummy variables included in the linear regression model.
