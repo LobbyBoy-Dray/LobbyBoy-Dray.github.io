@@ -8,7 +8,7 @@ draft: false
 tags:
   - meta-analysis
 description: >
-  PB means that the studies selected for your meta-analysis are systematically different from all available relevant studies.
+  The selected studies are systematically different from all available relevant studies.
 ---
 
 ## Table of contents
