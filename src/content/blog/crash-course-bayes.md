@@ -11,6 +11,8 @@ description: >
   Bayesian inference is essentially about using observed data to update prior knowledge about the population, resulting in what is called the posterior.
 ---
 
+> This is the final presentation for {SG8001: Teaching Students: First Steps}.
+
 ## Table of contents
 
 ## 1. After This Crash Course, You Will Be Able To:
