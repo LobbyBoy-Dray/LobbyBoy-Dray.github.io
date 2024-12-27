@@ -97,6 +97,11 @@ ITT_{\text{compliers}}
 \end{align*}
 $$
 
+Two hints for the last step:
+
+- $Cov(Y,Z) = E(YZ)-E(Y) \cdot E(Z)$
+- Law of total expectation: $E(Y) = E_ZE(Y|Z)$
+
 Thus, the IV estimand is essentially the average treatment effect for the compliers, named “**local average treatment effect (LATE)**.”
 
 ## Reference
