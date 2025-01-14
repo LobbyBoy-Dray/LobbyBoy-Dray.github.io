@@ -57,6 +57,19 @@ In addition to **obtaining standard errors for an estimator**, the bootstrap met
 
 ## 4. Applications: Regression Coefficients
 
+### 4.1. Three Approaches
+
+To derive the sampling distribution of the estimator $\hat{\beta}$ in regression, we can use several bootstrap approaches:
+
+1. **Empirical Bootstrap:** Also known as the “paired bootstrap,” this method treats $(X_i,Y_i)$ as one object. We then sample with replacement n times from these n objects to create a new bootstrap sample. For each bootstrap sample, we fit a linear regression.
+2. **Residual Bootstrap:** In this approach, we bootstrap the residuals and then regenerate Y. Using the bootstrap sample, we fit a linear regression as usual. We will delve into more detail about this process later.
+   - $Y_i^* = \hat{\beta}_0 + \hat{\beta}_1 X_i + \hat{\epsilon}_i^*$ where $\hat{\epsilon}_i^* \sim (e_1,e_2,\cdots)$
+3. **Wild Bootstrap:** The Wild Bootstrap is similar to the residual bootstrap, but it differs slightly in the way Y is regenerated.
+   - $Y_i^* = \hat{\beta}_0 + \hat{\beta}_1 X_i + V_i e_i$ where $V_i \sim N(0,1)$
+   - For the i-th observation, the wild bootstrap uses only its own residual. In contrast, the residual bootstrap probably use the residuals from other observations.
+
+### 4.2. Residual Bootstrap
+
 **God’s perspective (known distribution and parameter):**
 
 1. Generate $\epsilon$ from a known distribution.
@@ -77,6 +90,7 @@ In addition to **obtaining standard errors for an estimator**, the bootstrap met
 
 ## 5. References
 
+- Chen, Y. (2017). Bootstrap regression. [https://faculty.washington.edu/yenchic/17Sp_403/Lec6-bootstrap_reg.pdf](https://faculty.washington.edu/yenchic/17Sp_403/Lec6-bootstrap_reg.pdf)
 - Freedman, D. A. (2009). Chapter 8. In _Statistical models: Theory and practice_ (2nd ed., pp. 155-175). Cambridge University Press.
 - Lin, H.-T. (2020). _Machine Learning Handout_. National Taiwan University. Retrieved from [https://www.csie.ntu.edu.tw/~htlin/course/ml20fall/doc/210_handout.pdf](https://www.csie.ntu.edu.tw/~htlin/course/ml20fall/doc/210_handout.pdf)
 - Miles Chen. (2021, March 4). _Stats 102A Lesson 9-2 Bootstrap Hypothesis Tests [Video]_. YouTube. [https://www.youtube.com/watch?v=s7do_F9LV-w&list=PLKR7271tMEmgsp83ZJPMr96xd-8fPq3p1&index=25](https://www.youtube.com/watch?v=s7do_F9LV-w&list=PLKR7271tMEmgsp83ZJPMr96xd-8fPq3p1&index=25)
