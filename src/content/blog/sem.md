@@ -78,10 +78,10 @@ print(summary(m1))
 
 - Intercepts:
   - `.read`: intercept
-  - `motiv`: motiv's variance
+  - `motiv`: motiv's mean
 - Variances:
   - `.read`: residual variance
-  - `motiv`: motiv's mean
+  - `motiv`: motiv's variance
 - Note: `lavaan` uses MLE to do estimating; `lm` uses OLS instead.
 
 ### 2.2 Multiple regression (2+ ex & 1 en)
